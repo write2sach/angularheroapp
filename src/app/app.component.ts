@@ -6,5 +6,10 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'app works!';
+  showHeading = true;
+  heroes = ['Magneta', 'Bombasto', 'Magma', 'Tornado'];
+
+  toggleHeading() {
+    this.showHeading = !this.showHeading;
+  }
 }
